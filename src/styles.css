@@ -1,0 +1,12 @@
+@import "./assets/styles/variables.css";
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: var(--fonte-texto);
+}
+
+h1,
+h2 {
+  font-family: var(--fonte-titulo);
+}

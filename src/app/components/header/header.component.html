@@ -1,0 +1,38 @@
+<header>
+  <div class="spotify-logo__container">
+    <a href="">
+      <img class="spotify-logo" src="assets/icons/spotify-logo.webp" alt="" />
+    </a>
+  </div>
+  <div class="home-search__container">
+    <a routerLink="/" class="home__button">
+      <span class="fa fa-home" [class.page-active]="isActivePage('/')"></span>
+    </a>
+    <div class="search-bar">
+      <button><span class="fa fa-search"></span></button>
+      <input
+        id="search-input"
+        type="text"
+        maxlength="800"
+        placeholder="O que você quer ouvir?"
+        autocomplete="off"
+      />
+      <div class="division"></div>
+      <a
+        routerLink="/search"
+        class="sections__button"
+        (mousedown)="preventFocus($event)"
+        (click)="navigateToSearch()"
+      >
+        <span
+          class="fa-regular fa-folder-open"
+          [class.page-active]="isActivePage('/search')"
+        ></span>
+      </a>
+    </div>
+  </div>
+  <div class="login-container">
+    <button class="subscribe">Inscrever-se</button>
+    <button class="login">Entrar</button>
+  </div>
+</header>

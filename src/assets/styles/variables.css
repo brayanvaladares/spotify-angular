@@ -1,0 +1,11 @@
+:root {
+  /* FONTES */
+  --fonte-titulo: "Inter Tight";
+  --fonte-texto: "Inter";
+
+  /* CORES */
+  --cor-background: #121212;
+  --cor-background-content: #1f1f1f;
+  --cor-background-content-hover: #2e2e2e;
+  --cor-texto-cinza: #adadad;
+}

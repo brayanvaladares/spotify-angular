@@ -1,0 +1,136 @@
+.artistas {
+  padding-top: 28px;
+
+  .title {
+    font-size: 23px;
+    font-weight: 700;
+    margin-left: 23px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline 2px;
+    }
+  }
+
+  .grid-artistas {
+    display: grid;
+    margin: 0 10px 10px 10px;
+    grid-auto-flow: column;
+    gap: 6px;
+    padding: 16px 0;
+
+    .cards {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+      }
+
+      .nome {
+        margin-bottom: 10px;
+
+        .nome-artista {
+          font-weight: 500;
+          font-size: 15px;
+
+          &:hover {
+            text-decoration: underline 1.5px;
+          }
+        }
+      }
+
+      .categoria {
+        font-size: 14px;
+        color: var(--cor-texto-cinza);
+        margin-bottom: 1px;
+      }
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), #242424);
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+.albuns {
+  padding-top: 0;
+
+  .title {
+    font-size: 23px;
+    font-weight: 700;
+    margin: 23px;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline 2px;
+    }
+  }
+
+  .grid-albuns {
+    display: grid;
+    margin: 0 10px 10px 10px;
+    grid-auto-flow: column;
+    gap: 6px;
+    padding: 10px 0;
+
+    .cards {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      padding: 5px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+        border-radius: 5%;
+        margin-bottom: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+      }
+
+      .nome {
+        margin-bottom: 8px;
+        margin-top: 2px;
+
+        .nome-album {
+          font-weight: 500;
+          font-size: 15px;
+
+          &:hover {
+            text-decoration: underline 1.5px;
+          }
+        }
+      }
+
+      .album-artista {
+        font-size: 14px;
+        color: var(--cor-texto-cinza);
+        margin-bottom: 1px;
+      }
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        background-color: rgba(36, 36, 36, 0.8);
+        border-radius: 8px;
+      }
+    }
+  }
+}
