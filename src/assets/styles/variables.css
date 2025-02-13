@@ -1,4 +1,8 @@
 :root {
+  .hidden {
+    display: none;
+  }
+
   /* FONTES */
   --fonte-titulo: "Inter Tight";
   --fonte-texto: "Inter";

@@ -30,7 +30,9 @@ header {
     border-radius: 50%;
     background-color: var(--cor-background-content);
     cursor: pointer;
-    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition:
+      transform 0.2s ease-in-out,
+      color 0.2s ease-in-out;
 
     &:hover {
       color: #fff;
@@ -46,7 +48,9 @@ header {
     background-color: var(--cor-background-content);
     border-radius: 50px;
     padding: 5px;
-    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition:
+      background-color 0.3s ease-in-out,
+      box-shadow 0.3s ease-in-out;
 
     &:hover {
       background-color: rgba(81, 81, 81, 0.544);
@@ -106,10 +110,7 @@ header {
       margin: 0 8px;
       height: 24px;
       width: 1px;
-      background-image: linear-gradient(
-        var(--cor-texto-cinza),
-        var(--cor-texto-cinza)
-      );
+      background-image: linear-gradient(var(--cor-texto-cinza), var(--cor-texto-cinza));
     }
 
     .sections__button span {
