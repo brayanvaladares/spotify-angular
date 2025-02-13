@@ -6,10 +6,14 @@
   </div>
   <div class="home-search__container">
     <a routerLink="/" class="home__button">
-      <span class="fa fa-home" [class.page-active]="isActivePage('/')"></span>
+      <span
+        class="an an-house"
+        [class.page-active]="isActivePage('/')"
+        [class.an-fill.an-house]="isActivePage('/')"
+      ></span>
     </a>
     <div class="search-bar">
-      <button><span class="fa fa-search"></span></button>
+      <button><span class="an an-magnifying-glass"></span></button>
       <input
         id="search-input"
         type="text"
@@ -25,8 +29,9 @@
         (click)="navigateToSearch()"
       >
         <span
-          class="fa-regular fa-folder-open"
+          class="an an-folder-open"
           [class.page-active]="isActivePage('/search')"
+          [class.an-fill.folder-open]="isActivePage('/search')"
         ></span>
       </a>
     </div>

@@ -8,5 +8,6 @@ body {
 
 h1,
 h2 {
+  color: #fff;
   font-family: var(--fonte-titulo);
 }
