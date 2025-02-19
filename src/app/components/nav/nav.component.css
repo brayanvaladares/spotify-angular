@@ -57,6 +57,10 @@ po-widget {
       font-size: 20px;
       padding-right: 12px;
     }
+
+    &:hover {
+      color: #000000;
+    }
   }
 
   .fa-plus {
@@ -65,6 +69,11 @@ po-widget {
     font-size: 20px;
     cursor: pointer;
     transition: color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #1aaee454;
+      border-radius: 50%;
+    }
   }
 }
 
