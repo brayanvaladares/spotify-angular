@@ -3,11 +3,11 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: var(--fonte-texto);
+  font-family: var(--font-family-theme);
 }
 
 h1,
 h2 {
   color: #fff;
-  font-family: var(--fonte-titulo);
+  font-family: var(--font-family-theme);
 }

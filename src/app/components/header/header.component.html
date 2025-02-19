@@ -1,43 +1,24 @@
 <header>
   <div class="spotify-logo__container">
-    <a href="">
-      <img class="spotify-logo" src="assets/icons/spotify-logo.webp" alt="" />
+    <a href="https://www.totvs.com/">
+      <img class="totvs-logo" src="assets/icons/totvs-logo2.png" alt="" />
     </a>
   </div>
   <div class="home-search__container">
-    <a routerLink="/" class="home__button">
-      <span
-        class="an an-house"
-        [class.page-active]="isActivePage('/')"
-        [class.an-fill.an-house]="isActivePage('/')"
-      ></span>
-    </a>
-    <div class="search-bar">
-      <button><span class="an an-magnifying-glass"></span></button>
-      <input
-        id="search-input"
-        type="text"
-        maxlength="800"
-        placeholder="O que você quer ouvir?"
-        autocomplete="off"
-      />
-      <div class="division"></div>
-      <a
-        routerLink="/search"
-        class="sections__button"
-        (mousedown)="preventFocus($event)"
-        (click)="navigateToSearch()"
-      >
-        <span
-          class="an an-folder-open"
-          [class.page-active]="isActivePage('/search')"
-          [class.an-fill.folder-open]="isActivePage('/search')"
-        ></span>
-      </a>
-    </div>
+    <po-button p-icon="fa fa-home" p-label="" routerLink="/" class="home__button">
+    </po-button>
+    <po-search [p-literals]="customLiterals"></po-search>
+    <po-button
+      p-icon="fa fa-folder-open"
+      routerLink="/search"
+      class="sections__button"
+      (mousedown)="preventFocus($event)"
+      (click)="navigateToSearch()"
+    >
+    </po-button>
   </div>
   <div class="login-container">
-    <button class="subscribe">Inscrever-se</button>
-    <button class="login">Entrar</button>
+    <po-button p-label="Inscrever-se"></po-button>
+    <po-button p-label="Entrar" p-kind="primary"></po-button>
   </div>
 </header>
