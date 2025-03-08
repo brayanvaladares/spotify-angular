@@ -1,0 +1,46 @@
+.grid-artistas {
+  overflow: hidden;
+  border-radius: 8px;
+
+  &:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), #242424);
+  }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+  }
+
+  .nome {
+    margin-bottom: 10px;
+
+    span {
+      font-weight: 500;
+      font-size: 15px;
+
+      &:hover {
+        text-decoration: underline 1.5px;
+      }
+    }
+  }
+
+  .categoria {
+    font-size: 14px;
+    color: var(--cor-texto-cinza);
+    margin-bottom: 1px;
+  }
+}
+a {
+  color: #fff;
+}

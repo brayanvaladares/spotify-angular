@@ -1,0 +1,44 @@
+import { Injectable } from '@angular/core';
+import { Artista } from '../models/artista';
+
+@Injectable({
+  providedIn: 'root',
+})
+export class ArtistasServices {
+  artistas: Artista[] = [
+    {
+      name: 'Taylor Swift',
+      img: 'https://capricho.abril.com.br/wp-content/uploads/2025/02/taylor-swift-look-grammy-2025.jpg?quality=85&strip=info&w=1024',
+      category: 'Cantora e Compositora',
+    },
+    {
+      name: 'Ed Sheeran',
+      img: 'https://redefanfm.com.br/wp-content/uploads/2024/10/ed-sheeran-1-1.jpg',
+      category: 'Cantor',
+    },
+    {
+      name: 'Adele',
+      img: 'https://atlantidasc-prod.s3.amazonaws.com/wp-content/uploads/2024/07/9-1.jpg',
+      category: 'Cantora e Compositora',
+    },
+    {
+      name: 'Bruno Mars',
+      img: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2024/10/bruno-mars-em-sao-paulo-1.jpg',
+      category: 'Cantor',
+    },
+    {
+      name: 'Billie Eilish',
+      img: 'https://2.bp.blogspot.com/-z5H3TsD6xFU/XkV8g6TIurI/AAAAAAAAU6E/5hh1bTx8mooh0G858fwRiumHW8B8rQYfQCLcBGAsYHQ/w914-h514-p-k-no-nu/billie-eilish-sunglasses-uhdpaper.com-4K-6.463-wp.thumbnail.jpg',
+      category: 'Cantora',
+    },
+    {
+      name: 'Dua Lipa',
+      img: 'https://portalpopline.com.br/wp-content/uploads/2023/08/dua-lipa-boneca-exclusiva-barbie-dance-the-night-1-uk-jpg.webp',
+      category: 'Cantora',
+    },
+  ];
+
+  getArtista(): Artista[] {
+    return this.artistas;
+  }
+}

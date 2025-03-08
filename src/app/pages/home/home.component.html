@@ -1,74 +1,11 @@
 <main>
   <div class="artistas">
     <span class="title">Artistas populares</span>
-    <div class="grid-artistas">
-      <!-- Primeiro -->
-      <a href="" class="cards">
-        <div class="cards card1">
-          <img src="assets/images/artists/taylor-swift.jpg" alt="" />
-          <div class="nome">
-            <span class="nome-artista">Taylor Swift</span>
-          </div>
-          <span class="categoria">Artista</span>
-        </div>
-      </a>
-
-      <!-- Segundo -->
-      <a href="" class="cards">
-        <div class="cards card6">
-          <img src="assets/images/artists/capital-inicial.jpg" alt="" />
-          <div class="nome">
-            <span class="nome-artista">Capital Inicial</span>
-          </div>
-          <span class="categoria">Artista</span>
-        </div>
-      </a>
-
-      <!-- Terceiro -->
-      <a href="" class="cards">
-        <div class="cards card4">
-          <img src="assets/images/artists/acdc.jpg" alt="" />
-          <div class="nome">
-            <span class="nome-artista">AC/DC</span>
-          </div>
-          <span class="categoria">Artista</span>
-        </div>
-      </a>
-
-      <!-- Quarto -->
-      <a href="" class="cards">
-        <div class="cards card3">
-          <img src="assets/images/artists/nct.jpg" alt="" />
-          <div class="nome">
-            <span class="nome-artista">NCT 127</span>
-          </div>
-          <span class="categoria">Artista</span>
-        </div>
-      </a>
-
-      <!-- Quinto -->
-      <a href="" class="cards">
-        <div class="cards card5">
-          <img src="assets/images/artists/exo.jpg" alt="" />
-          <div class="nome">
-            <span class="nome-artista">EXO</span>
-          </div>
-          <span class="categoria">Artista</span>
-        </div>
-      </a>
-
-      <!-- Sexto -->
-      <a href="" class="cards">
-        <div class="cards card2">
-          <img src="assets/images/artists/henrique-juliano.jpg" alt="" />
-          <div class="nome">
-            <span class="nome-artista">Henrique e Juliano</span>
-          </div>
-          <span class="categoria">Artista</span>
-        </div>
-      </a>
+    <div class="artistas-grid">
+      <app-artista-card *ngFor="let Artista of artistas" [Artista]="Artista" />
     </div>
   </div>
+
   <div class="albuns">
     <span class="title">Singles e álbuns que todo mundo gosta</span>
     <div class="grid-albuns">
