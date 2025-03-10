@@ -2,7 +2,7 @@ nav {
   background-color: var(--cor-background);
   border-radius: 8px;
   padding: 8px;
-  min-width: 404px;
+  min-width: 390px;
   height: 100%;
   cursor: default;
   display: flex;
