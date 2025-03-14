@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { Artista } from '../../../models/artista';
 
 @Component({
   selector: 'app-artista-card',
@@ -8,5 +7,5 @@ import { Artista } from '../../../models/artista';
   styleUrl: './artista-card.component.css',
 })
 export class ArtistaCardComponent {
-  @Input() Artista: any;
+  @Input() artistasDB: any;
 }

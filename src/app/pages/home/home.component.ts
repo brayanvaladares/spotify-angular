@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArtistasServices } from '../../services/artistas.service';
 import { ArtistaCardComponent } from './artista-card/artista-card.component';
+import { DataService } from '../../services/data.service';
+import { Artista } from '../../interfaces/artista';
 
 @Component({
   selector: 'app-home',
@@ -10,9 +11,13 @@ import { ArtistaCardComponent } from './artista-card/artista-card.component';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-  artistas: any;
+  constructor(private dataService: DataService) {}
 
-  constructor(private artistasService: ArtistasServices) {
-    this.artistas = this.artistasService.getArtista();
+  artistasDB: Artista[] = [];
+
+  ngOnInit() {
+    this.dataService.getArtistas().subscribe((data: Artista[]) => {
+      this.artistasDB = data;
+    });
   }
 }
